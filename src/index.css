@@ -1,7 +1,70 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
 .btn {
   @apply px-6 py-2 bg-orange-500 text-white font-bold rounded-lg shadow-md hover:bg-orange-600 transition duration-300;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-white text-orange-500 font-bold rounded-lg shadow-md hover:bg-orange-100 transition duration-300 border border-orange-500;
+}
+
+select {
+  @apply px-4 py-2 bg-white text-orange-500 font-bold rounded-lg shadow-md hover:bg-orange-100 transition duration-300 border border-orange-500;
+}
+
+/* Line styles */
+.line-horizontal {
+  width: 100%;
+  height: 5px;
+}
+
+.line-horizontal.top-1\/6 {
+  top: 16.6667%;
+}
+
+.line-horizontal.top-1\/2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line-horizontal.bottom-1\/6 {
+  bottom: 16.6667%;
+}
+
+.line-vertical {
+  width: 5px;
+  height: 100%;
+}
+
+.line-vertical.left-1\/6 {
+  left: 16.6667%;
+}
+
+.line-vertical.left-1\/2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.line-vertical.right-1\/6 {
+  right: 16.6667%;
+}
+
+.line-diagonal-1 {
+  width: 5px;
+  height: 141%;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.line-diagonal-2 {
+  width: 5px;
+  height: 141%;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
 }
